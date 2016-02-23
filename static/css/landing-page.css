@@ -59,7 +59,7 @@ h6 {
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.5;
+    /*opacity: 0.5;*/
     background: url(../img/intro-bg.jpg) no-repeat center center;
     -ms-background-size: cover;
     -o-background-size: cover;
@@ -75,9 +75,9 @@ h6 {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
-    color: #54b;
+    color: #fff;
     background-size: cover;
-    background-color: rgba(154, 143, 225, 0.5);
+    background-color: rgba(84, 68, 187, 0.65);
 }
 
 .static-header{
@@ -102,12 +102,17 @@ h6 {
 }
 .see_hiw p{
     float : right;
-    color: #25158A;
+    color: #fff;
 }
 
  .see_hiw img{
     float: right;
     margin-top: -10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
 }
 
 
