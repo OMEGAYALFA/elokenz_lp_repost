@@ -259,12 +259,35 @@ background-repeat: repeat;
     border-top: 3px solid #e7e7e7;
 }
 
-.banner {
-    padding: 250px 0;
-    color: #f8f8f8;
+
+
+.banner:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /*opacity: 0.5;*/
     background: url(../img/banner-repost.jpg) no-repeat center center;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
 }
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    padding: 250px 0;
+    color: #f8f8f8;
+
+    background-color: rgba(84, 68, 187, 0.55);
+}
+
 
 .banner h2 {
     margin: 0;
