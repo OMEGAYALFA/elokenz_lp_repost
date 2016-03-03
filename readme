@@ -1,0 +1,1 @@
+aws s3 sync . s3://reposts.elokenz.com --region us-east-1 --acl "public-read"

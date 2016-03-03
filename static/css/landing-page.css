@@ -714,3 +714,42 @@ PRICING TABLES TWO STYLES
 .mauticform-message:empty, .mauticform-error:empty  {
    display: none;
 }
+
+.hotspot{
+width: 3.7%; height: 5.5%; background: #cc0000; border: 1px solid #cc0000; border-radius: 20px; opacity: 0.8;
+}
+
+.hotspot_image2 .hotspot{
+width: 3.7%; height: 4%; background: #cc0000; border: 1px solid #cc0000; border-radius: 20px; opacity: 0.8;
+}
+
+.hotspot:before{
+  position:relative;
+  left: 35%;
+  top: 20%;
+  color: #fff;
+}
+
+.hotspot1:before{
+  content: '1';
+}
+
+.hotspot2:before{
+  content: '2';
+}
+
+.hotspot3:before{
+  content: '3';
+}
+
+.hotspot4:before{
+  content: '4';
+}
+
+.hotspot5:before{
+  content: '5';
+}
+
+.hotspot6:before{
+  content: '6';
+}
