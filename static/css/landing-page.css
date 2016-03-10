@@ -60,7 +60,7 @@ h6 {
     height: 100%;
     z-index: -1;
     /*opacity: 0.5;*/
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    /*background: url(../img/intro-bg.jpg) no-repeat center center;*/
     -ms-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
@@ -77,7 +77,17 @@ h6 {
     text-align: center;
     color: #fff;
     background-size: cover;
-    background-color: rgba(84, 68, 187, 0.65);
+    /*background-color: rgba(84, 68, 187, 0.65);*/
+
+background: rgba(89,188,183,1);
+background: -moz-linear-gradient(-45deg, rgba(89,188,183,1) 0%, rgba(85,68,187,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(89,188,183,1)), color-stop(100%, rgba(85,68,187,1)));
+background: -webkit-linear-gradient(-45deg, rgba(89,188,183,1) 0%, rgba(85,68,187,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(89,188,183,1) 0%, rgba(85,68,187,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(89,188,183,1) 0%, rgba(85,68,187,1) 100%);
+background: linear-gradient(135deg, rgba(89,188,183,1) 0%, rgba(85,68,187,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59bcb7', endColorstr='#5544bb', GradientType=1 );
+
 }
 
 .static-header{
@@ -126,7 +136,8 @@ h6 {
     font-weight: 400;
     margin: 0;
     font-size: 30px;
-    float: left;
+    position: absolute;
+    left: 0px;
     margin-left: 20px;
 }
 
@@ -134,7 +145,16 @@ h6 {
     font-family: "Montserrat", "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     margin: 0;
-    font-size: 50px;
+    font-size: 45px;
+}
+
+@media (max-width: 768px) {
+  .intro-header > h1 {
+    font-size: 25px;
+  }
+  .intro-message > h2 {
+    font-size: 30px;
+  }
 }
 
 .intro-divider {
@@ -384,19 +404,31 @@ border-radius: 30px;
 }
 
 .button {
-	background-color: #ff994e;
+	background-color: #FFAA68;
 	width: auto;
 	display: block;
 	margin: auto;
 	padding: 10px 30px;
 	border: none;
-	color: #fff;
+  color: #fff;
+  text-shadow: 1px 1px #4F6EAA;
+  font-size: 20px;
+  font-weight: bold;
 	vertical-align: middle;
 	position: relative;
 	z-index: 1;
 	-webkit-backface-visibility: hidden;
 	-moz-osx-font-smoothing: grayscale;
 	border-radius: 30px;
+}
+.btn-default{
+  	/*background-color: #FFAA68;*/
+  color: #fff;
+  text-shadow: 1px 1px #4F6EAA;
+}
+.button:hover{
+    color: #444;
+    text-shadow: unset;
 }
 .button:focus {
 	outline: none;
@@ -595,11 +627,13 @@ GENERAL STYLES
 BACKGROUND COLORS
 ============================================================*/
 .db-bk-color-three {
-    background-color: #47887E;
+    background-color: #369D98;
+    /*background-color: rgba(89,188,183,1);*/
 }
 
 .db-bk-color-four {
     background-color: #469E6F;
+    background-color: rgba(89,188,183,1);
 }
 
 /*============================
@@ -715,19 +749,76 @@ PRICING TABLES TWO STYLES
    display: none;
 }
 
+
 .hotspot{
 width: 3.7%; height: 5.5%; background: #cc0000; border: 1px solid #cc0000; border-radius: 20px; opacity: 0.8;
 }
-
 .hotspot_image2 .hotspot{
 width: 3.7%; height: 4%; background: #cc0000; border: 1px solid #cc0000; border-radius: 20px; opacity: 0.8;
 }
-
 .hotspot:before{
   position:relative;
   left: 35%;
   top: 20%;
   color: #fff;
+}
+@media(max-width:800px) {
+  .hotspot{
+  width: 4.7%; height: 7%; background: #cc0000; border: 1px solid #cc0000; border-radius: 20px; opacity: 0.8;
+  }
+  .hotspot_image2 .hotspot{
+  width: 4.5%; height: 5%; background: #cc0000; border: 1px solid #cc0000; border-radius: 20px; opacity: 0.8;
+  }
+  .hotspot:before{
+    position:relative;
+    left: 30%;
+    top: 9%;
+    color: #fff;
+  }
+}
+@media(max-width:640px) {
+  .hotspot{
+  width: 5%; height: 8%; background: #cc0000; border: 1px solid #cc0000; border-radius: 20px; opacity: 0.8;
+  }
+  .hotspot_image2 .hotspot{
+  width: 4.5%; height: 5%; background: #cc0000; border: 1px solid #cc0000; border-radius: 20px; opacity: 0.8;
+  }
+  .hotspot:before{
+    position:relative;
+    left: 30%;
+    top: 9%;
+    color: #fff;
+  }
+}
+@media(max-width:480px) {
+  .hotspot{
+  width: 6%; height: 9.5%; background: #cc0000; border: 1px solid #cc0000; border-radius: 20px; opacity: 0.8;
+  }
+  .hotspot_image2 .hotspot{
+  width: 6.3%; height: 6.8%; background: #cc0000; border: 1px solid #cc0000; border-radius: 20px; opacity: 0.8;
+  }
+  .hotspot:before{
+    position:relative;
+
+    left: 30%;
+    top: 5%;
+    color: #fff;
+  }
+}
+@media(max-width:440px) {
+  .hotspot{
+  width: 6%; height: 9.5%; background: #cc0000; border: 1px solid #cc0000; border-radius: 20px; opacity: 0.8;
+  }
+  .hotspot_image2 .hotspot{
+  width: 6.3%; height: 6.8%; background: #cc0000; border: 1px solid #cc0000; border-radius: 20px; opacity: 0.8;
+  }
+  .hotspot:before{
+    position:relative;
+
+    left: 25%;
+    top: -15%;
+    color: #fff;
+  }
 }
 
 .hotspot1:before{
