@@ -1,7 +1,9 @@
 aws s3 sync . s3://reposts.elokenz.com --region us-east-1 --acl "public-read"
-aws s3 sync . s3://repost.elokenz.com --region us-east-1 --acl "public-read"  --exclude ".git/*" --exclude ".DS_Store"
+
+Utilisé actuellement :
+aws s3 sync . s3://repost.elokenz.com --region us-east-1 --acl "public-read"  --exclude ".git/*" --exclude ".DS_Store" --cache-control public,max-age=30672000
 
 
 Plus optimisé :
 aws s3 sync . s3://repost.elokenz.com --region us-east-1 --acl "public-read" --exclude "*" --include "*.css" --include "*.js" --content-encoding gzip --cache-control public,max-age=30672000
-aws s3 sync . s3://repost.elokenz.com --region us-east-1 --acl "public-read" --exclude "*.js" --exclude "*.css"
+aws s3 sync . s3://repost.elokenz.com --region us-east-1 --acl "public-read" --exclude "*.js" --exclude "*.css" --exclude ".git/*" --exclude ".DS_Store"
