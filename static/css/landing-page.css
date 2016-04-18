@@ -847,4 +847,12 @@ width: 3.7%; height: 4%; background: #cc0000; border: 1px solid #cc0000; border-
 
 .howitworks{
   background-color: #e4e4e4;
+  padding-bottom: 0px;
+  padding-top: 30px;
+}
+
+.howitworks h2{
+    color: #777;
+    font-size: 2.8em;
+    padding-bottom: 30px;
 }
