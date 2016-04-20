@@ -59,7 +59,6 @@
 
     <link rel="icon" type="image/png" href="/static/img/logo_elokenz_sq_32.png">
     <link rel="apple-touch-icon" href="/static/img/logo_elokenz_sq_32.png">
-    <script src="static/js/layzr.min.js" type="text/javascript"></script>
 
 
     <script src="static/js/landing_repost.js" type="text/javascript"></script>
@@ -126,7 +125,7 @@
               </div>
 
                 <div style="width:100%">
-                  <img  data-normal="static/img/repostelokenz.gif" data-retina="static/img/repostelokenz.gif" data-srcset="static/img/repostelokenz.gif 1x" src="/static/img/repostelokenz_frame1.png"  class="img-responsive" title="How Repost works" alt="Elokenz Repost Robot" style="min-width:100%"">
+                  <img  data-src="static/img/repostelokenz.gif" data-retina="static/img/repostelokenz.gif"  src="/static/img/repostelokenz_frame1.png"  class="img-responsive" title="How Repost works" alt="Elokenz Repost Robot" style="min-width:100%"">
 
                 </div>
 
@@ -243,6 +242,7 @@
     <!-- Tooltips - Hotspots -->
     <script src="/static/js/tooltip_js.js"></script>
     <script src="/static/js/jquery.app.ui.js"></script>
+    <script src="/static/js/jquery.unveil.js"></script>
 
     <script type="text/javascript">
             $(document).ready(function () {
@@ -251,6 +251,12 @@
                });
             });
 
+   </script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("img").unveil();
+      });
    </script>
 
 
