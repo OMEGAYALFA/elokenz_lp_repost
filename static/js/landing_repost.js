@@ -27,11 +27,13 @@ function mainFN(priceChoice){
 function saveFirstChoice(priceChoice, callback){
     // Save the first click to localstorage and call callback (allows for redirect)
     if (localStorage.priceFirstChoice) {
-      console.log("Fist choice is " + localStorage.priceFirstChoice)
+        console.log("Fist choice is already set and is : " + localStorage.priceFirstChoice)
         console.log("we redirect");
     } else {
         localStorage.priceFirstChoice = priceChoice;
         console.log("we redirect");
+        console.log("We have save the first choice : " + localStorage.priceFirstChoice)
+        updateLead();
     }
     callback();
 }
