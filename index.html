@@ -3,12 +3,13 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
-    <head>
+<head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Repost by Elokenz</title>
         <meta name="description" content="Increase your social media traffic by reposting your most successful posts, forever">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <meta property='og:title' content='Repost by Elokenz'>
@@ -32,70 +33,92 @@
         <meta itemprop='image' content='http://repost.elokenz.com/static/img/repost_preview2.png'>
         <meta itemprop='author' content='https://plus.google.com/+Jice_Lavocat'>
 
+		<!-- Styles -->
+	    <link href="static/css/bootstrap.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="static/css/parallax.css"/>
 
-        <!-- Bootstrap Core CSS -->
-    <!-- <link rel="stylesheet" href="/static/css/bootstrap.334.min.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
 
-    <!-- Custom Fonts -->
-    <link href="/static/fonts/font-icomoon/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	    <link rel="icon" type="image/png" href="/static/img/logo_elokenz_sq_32.png">
+	    <link rel="apple-touch-icon" href="/static/img/logo_elokenz_sq_32.png">
+	    <script src="/static/js/landing_repost.js" type="text/javascript"></script>	
 
-    <!-- Custom CSS -->
-    <link href="/static/css/landing-page.css" rel="stylesheet">
+        <script type="text/javascript">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+            /** This section is only needed once per page if manually copying **/
+            if (typeof MauticSDKLoaded == 'undefined') {
+                var MauticSDKLoaded = true;
+                var head            = document.getElementsByTagName('head')[0];
+                var script          = document.createElement('script');
+                script.type         = 'text/javascript';
+                script.src          = 'http://vvv.elokenz.com/media/js/mautic-form.js';
+                script.onload       = function() {
+                    MauticSDK.onLoad();
+                };
+                head.appendChild(script);
+                var MauticDomain = 'http://vvv.elokenz.com';
+                var MauticLang   = {
+                    'submittingMessage': "Sending..."
+                }
+            }
+        </script>
+
+</head>
+<body>
 
 
-
-    <link rel="icon" type="image/png" href="/static/img/logo_elokenz_sq_32.png">
-    <link rel="apple-touch-icon" href="/static/img/logo_elokenz_sq_32.png">
-
-
-    <script src="static/js/landing_repost.js" type="text/javascript"></script>
-  </head>
-  <body>
-
-    <header>
     <!-- Header -->
-    <a name="about"></a>
+   
     <div class="intro-header">
-      <!-- <img style="max-height:41px; margin-top:-10px;" src="/static/img/logo_elokenz.png"> -->
-      <h1><img style="max-height:80px; margin-top:-10px;" src="static/img/logo-repost_500_white.png"></h1>
-
-
+	
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#">       
+					<img style="max-height:41px; margin-top:-10px;" src="/static/images/logo-repost.png">
+				</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">How it works</a></li>
+                    <!-- <li><a href="#about">Features</a></li> -->
+                    <li><a href="/pricing.html">Pricing</a></li>
+                    <li><a href="http://www.elokenz.com/about/">About</a></li>
+                    <li><a href="http://blog.elokenz.com" target="_blank">Blog</a></li>
+                    <li><a href="http://www.elokenz.com/contact/">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	
+	
         <div class="container">
 
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
+            <div class="row intro-banner">
+                <div class="col-lg-12">
                     <div class="intro-message">
-
-                        <!--<h2>Make the most of your existing content automatically</h2>-->
-                        <!-- See https://www.reddit.com/r/content_marketing/comments/48aryt/can_you_help_me_to_get_the_copy_right/ -->
-                        <!-- <h2>Repost your best social media updates automatically, forever</h2> -->
-                        <h2>Increase your social media traffic by reposting your most successful posts, forever</h2>
-                        <center><p>
-                          <!-- What's the point of publishing articles that won't be visited after few weeks ? <br /> Instead, you could use the power of social media to continuously get traffic.
-
-                          <br><br> -->
-
-                          Get your content analyzed by an <strong>intelligent agent</strong> and <strong>reposted automatically</strong> on social networks when it has most chance to resonate. <br />Your  <strong>exposure lasts forever</strong>.</p></center>
-
-                          <img src="/static/img/c_arrow_white.png" class="cta_image" >
-                          <a href="pricing.html" class="btn button " style="margin-top: 30px; max-width: 300px;" id="cta_top_home">Pre-Register Now</a>
-
-                    </div>
-
-                    <!-- <div class="see_hiw">
-                    <img src="static/img/c_arrow_white.png" ></a>
-                      <a href="#howitworks"><p>See how it works</p>
-                    </div> -->
+                        <h1>Increase your social media traffic by reposting your most successful posts, forever</h1>
+                        <p>Get your content analyzed by an intelligent agent and reposted automatically on social networks when it has most chance to resonate. 
+						Your exposure lasts forever.</p>
+						<br/>
+						<a href="#" class="btn btn-default" role="button" style="margin-top:20px;">Join the waiting list</a>
+					</div>
                 </div>
             </div>
 
@@ -104,162 +127,277 @@
 
     </div>
     <!-- /.intro-header -->
-    </header>
+	 <a name="about"></a>
+    <div class="bloc-tour">
+	
+		<div id="tour" class="tour">
+			<div class="row">
+				<ul id="scene" class="scene">
+					<li class="layer bg" data-depth="1.00"><img src="/static/images/circle1.png"></li>
+					<li class="layer bg" data-depth="0.80"><img src="/static/images/circle2.png"></li>
+					<li class="layer bg" data-depth="0.60"><img src="/static/images/circle3.png"></li>
+					<li class="layer bg" data-depth="0.40"><img src="/static/images/circle4.png"></li>
+				</ul>
+			</div>
+		</div>
 
+		<div class="container">
+		  <div class="row">
+			<img src="/static/images/icon-connect.png" alt="">
+			<h3>Link your social media accounts</h3>
+			<p>Connect your Elokenz account with as many social media accounts as you want. 
+			Elokenz beta already supports Twitter and Linkedin.<br/>More features coming soon...</p>
+			<img src="/static/images/icon-createPost.png" alt="">
+			<h3>Create a post</h3>
+			<p>Elokenz automatically creates a post that includes your article's title, main picture and link. 
+			You can choose to customize this post or to create a few others to compare click through rates.</p>
+			<img src="/static/images/icon-calendar.png" alt="">
+			<h3>Set your calendar</h3>
+			<p>Determine when Elokenz should send your posts. Do it once and for all, 
+			Elokenz will automatically post on social media at those times, no need to set a time every time you create a new post!</p>
+			<img src="/static/images/icon-enjoy.png" alt="">
+			<h3>Enjoy your free time!</h3>
+			<p>With Elokenz, save hours each week, don't let your old articles go to waste and increase your long-term reach.</p>
+		  </div>
 
+		</div> <!-- /container -->
+    </div> <!-- /bloc-tour -->
+	
+	
+<div class="bloc-testimonials dark-bg">
 
-  <!-- Page Content -->
+	<div class="container">
+		<div class="row">
 
-      <a name="howitworks"></a>
-      <div class="content-section-c howitworks">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			  </ol>
+			 
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+				<div class="item active">
+					<h5>Efficient and easy to use, Elokenz saves me a few hours every week.<br/>
+					Definitely a must-have tool for all social media managers!</h5>
+					<p><img src="/static/images/icon-socials-twitter.png" height="20px" style="padding-right:15px;" alt=""/><a href="#" alt="">@laura_doe</a> - <a href="#" alt="">Link</a></p>
+				</div>
+				<div class="item">
+					<h5>Efficient and easy to use, Elokenz saves me a few hours every week.<br/>
+					Definitely a must-have tool for all social media managers!</h5>
+					<p><img src="/static/images/icon-socials-twitter.png" height="20px" style="padding-right:15px;" alt=""/><a href="#" alt="">@laura_doe</a> - <a href="#" alt="">Link</a></p>
+				</div>
+				<div class="item">
+					<h5>Efficient and easy to use, Elokenz saves me a few hours every week.<br/>
+					Definitely a must-have tool for all social media managers!</h5>
+					<p><img src="/static/images/icon-socials-twitter.png" height="20px" style="padding-right:15px;" alt=""/><a href="#" alt="">@laura_doe</a> - <a href="#" alt="">Link</a></p>
+				</div>
+			  </div>
+			</div>
 
-
-
-              <div class="row text-center ">
-                <div class="col-lg-12" >
-                          <h2>The way it works</h2>
-                </div>
-              </div>
-
-                <div style="width:100%">
-                  <img  data-src="static/img/repostelokenz.gif" data-retina="static/img/repostelokenz.gif"  src="/static/img/repostelokenz_frame1.png"  class="img-responsive" title="How Repost works" alt="Elokenz Repost Robot" style="min-width:100%"">
-
-                </div>
-
-
-
-          <!-- /.container -->
-
-      </div>
-      <!-- /.content-section-a -->
-
-
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-xs-12">
-                    <h2 class="section-quote">Your content finally benefits from the long tail effect.</h2>
-        </div>
+		</div>
+	</div>
+</div>
+	
+	
+<div class="bloc-features">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-12 feature">
+				<img src="/static/images/icon-features-1.png" alt="" />
+			  <h4>Increase long-term reach</h4>
+			  <p>Your content is reshared over time, multiplying your reach on the long run.</p>
+			</div>
+			<div class="col-lg-4 col-md-12 feature">
+				<img src="/static/images/icon-features-2.png" alt="" />
+			  <h4>No more passive assets</h4>
+			  <p>How many published articles are sleeping on your blog ? Stop wasting money for short-lived content.</p>
+			</div>
+			<div class="col-lg-4 col-md-12 feature">
+				<img src="/static/images/icon-features-3.png" alt="" />
+			  <h4>Save social media time</h4>
+			  <p>Stop "curating" your competitor content ! Fill your timeline with your best posts.</p>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	
+<div class="bloc-howitworks-animated" style="background-color: #e4e4e4">
+	<div class="container">
+		<div class="row">
+            <div style="width:100%; max-width:1250px;">
+              <img  data-src="static/img/repostelokenz.gif" data-retina="static/img/repostelokenz.gif"  src="/static/img/repostelokenz_frame1.png"  class="img-responsive" title="How Repost works" alt="Elokenz Repost Robot" style="width:100%; max-width:1250px;">
             </div>
-
         </div>
-        <!-- /.container -->
-
     </div>
-    <!-- /.content-section-b -->
+</div>
+	
+<div class="bloc-contact-join dark-bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-12 bloc-contact">
+			  <h3>I have some questions</h3>
+			  <p>And we have the answers ! Let us know what's on your mind and our team will answer you as quickly as possible.</p><br/>
+				<a href="http://www.elokenz.com/contact/" class="btn btn-default" role="button">Contact us</a>
+			</div>
+			<div class="col-lg-6 col-md-12 bloc-join">
+			  <h3>I want to join the waiting list</h3>
+			  <p>How cool ! Soon, Repost will open to the public.
+				For now, you will join the waiting list and you might soon be testing the beta version of Respost !</p><br/>
+				<a href="/pricing.html" class="btn btn-default" role="button">Join the waiting list</a>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	
+<div class="bloc-socials dark-bg">
+	<div class="container">
+		<div class="row bloc-socials-title">
+			<div>
+			  <h3>Follow us and keep up to date with Elokenz new features</h3>
+			</div>
+		</div>
+        <style type="text/css" scoped>
+            .mauticform_wrapper {}
+            .mauticform-innerform {}
+            .mauticform-post-success {}
+            .mauticform-name { font-weight: bold; font-size: 1.5em; margin-bottom: 3px; }
+            .mauticform-description { margin-top: 2px; margin-bottom: 10px; }
+            .mauticform-error { float:left; color: red; }
+            .mauticform-message { float:left; color: #fff; }
+            .mauticform-row { display: block; margin-bottom: 20px; }
+            .mauticform-label { font-size: 1.1em; display: block; font-weight: bold; margin-bottom: 5px; }
+            .mauticform-row.mauticform-required .mauticform-label:after { color: #e32; content: " *"; display: inline; }
+            .mauticform-helpmessage { display: block; font-size: 0.9em; margin-bottom: 3px; }
+            .mauticform-errormsg { display: block; color: red; margin-top: 2px; }
+            .mauticform-selectbox, .mauticform-input, .mauticform-textarea { width: 50%; padding: 0.2em 0.2em; border: 1px solid #CCC; box-shadow: 0px 1px 3px #DDD inset; border-radius: 4px; box-sizing: border-box; }
+            .mauticform-checkboxgrp-row {}
+            .mauticform-checkboxgrp-label { font-weight: normal; }
+            .mauticform-checkboxgrp-checkbox {}
+            .mauticform-radiogrp-row {}
+            .mauticform-radiogrp-label { font-weight: normal; }
+            .mauticform-radiogrp-radio {}
+            button[type="submit"] {
+              /*-webkit-appearance: button;*/
+              padding-left:50px;
+              padding-right:50px;
+              padding: 7px 30px;
+              background-color:#54dcb4;
+              cursor: pointer;
+              border-radius: 30px;
+              border: 4px solid #54dcb4;
+            }
+        </style>   
 
-    <div class="content-section-a">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2 col-lg-offset-2 col-sm-4">
-
-
-
-
-          <span class="icon-features"><i class="fa fa-hourglass-half"></i></span>
-                    <h2 class="features-title">Increase Long Term Reach</h2>
-                    <p class="lead">Your content is reshared over time, multiplying your reach on the long run.</p>
-                </div>
-                <div class="col-lg-2 col-lg-offset-1 col-sm-4">
-
-          <span class="fa-stack fa-lg">
-        <i class="fa fa-bed fa-stack-1x"></i>
-        <i class="fa fa-ban fa-stack-2x text-danger"></i>
-        </span>
-                    <h2 class="features-title">No More Passive Assets</h2>
-                    <p class="lead">How many published articles are sleeping on your blog ? Stop wasting money for short-lived content.</p>
-                </div>
-                <div class="col-lg-2 col-lg-offset-1 col-sm-4">
-          <span class="icon-features"><i class="fa fa-hashtag"></i></span>
-                    <h2 class="features-title">Save social media time</h2>
-                    <p class="lead">Stop "curating" your competitor content ! Fill your timeline with your best posts.</p>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-
-  <a  name="contact"></a>
-    <div class="banner">
-
-        <div class="container">
-
-            <div class="row newsletter">
-                <div class="col-lg-12" >
-                    <h2>Turn your existing content <br>to your advantage</h2>
-                      <!-- <img src="http://uxrepo.com/static/icon-sets/iconic/svg/arrow-curved.svg" width="70" class="cta_image">
-                      <img src="http://www.pubzi.com/f/136793-lg-136788-Curved-Arrow,-Blue.png" width="70" class="cta_image">-->
-                      <img src="/static/img/c_arrow_white.png" class="cta_image">
-                      <a href="pricing.html" class="btn button " style="margin-top: 30px; max-width: 300px;" id="cta_bottom_home">Pre-Register Now</a>
-
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.banner -->
-
-
-
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-          <p><img style="max-height:41px;" src="/static/img/logo_elokenz.png"></p><br/><br/>
-
-                    <p class="copyright text-muted small">Copyright &copy; Elokenz 2016. All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+ 
 
 
+		<div class="row bloc-socials-icons">
+			<div class="col-lg-6 col-md-12 social-icon-mail" id="mauticform_wrapper_interestedinrepost">
+				<img src="/static/images/icon-socials-mail.png" alt=""/>
+				<form role="form" method="post" action="http://vvv.elokenz.com/form/submit?formId=3" id="mauticform_interestedinrepost" data-mautic-form="interestedinrepost">
+
+					<input id="mauticform_input_interestedinrepost_email" name="mauticform[email]" class="mauticform-input" type="text" placeholder="Email address" style="width:360px;margin-right:30px;"/>
+                    <span class="mauticform-errormsg" style="display: none;"></span>
+					<input id="mauticform_input_interestedinrepost_interest_repost" name="mauticform[interest_repost]" value="1" class="mauticform-hidden" type="hidden" />
+                    <input type="hidden" name="mauticform[formId]" id="mauticform_interestedinrepost_id" value="3" />
+                    <input type="hidden" name="mauticform[return]" id="mauticform_interestedinrepost_return" value="" />
+                    <input type="hidden" name="mauticform[formName]" id="mauticform_interestedinrepost_name" value="interestedinrepost" />
+					<button type="submit" name="mauticform[submit]" id="mauticform_input_interestedinrepost_submit" name="mauticform[submit]" value="" class="mauticform-button" value="1">Send</button>
+                    <!-- <button type="submit" name="mauticform[submit]" id="mauticform_input_interestedinrepost_submit" name="mauticform[submit]" value="" class="mauticform-button" value="1">Send</button> -->
+                    <br />
+                    <span class="mauticform-error" id="mauticform_interestedinrepost_error"></span>
+                    <span class="mauticform-message" id="mauticform_interestedinrepost_message"></span>
+                    <span class="mauticform-innerform"></span>
+
+                    
+
+				</form>
+			</div>
+			<a href="https://www.facebook.com/elokenz/" target="_blank" alt="">
+				<div class="col-lg-2 col-md-4 social-icon-facebook">
+					<img src="/static/images/icon-socials-fb.png" alt=""/>
+				</div>
+			</a>
+			<a href="https://twitter.com/elokenz_com" target="_blank" alt="">
+				<div class="col-lg-2 col-md-4 social-icon-twitter">
+					<img src="/static/images/icon-socials-twitter.png" alt=""/>
+				</div>
+			</a>
+			<a href="http://www.linkedin.com/company/5229522" target="_blank" alt="">
+				<div class="col-lg-2 col-md-4 social-icon-linkedin">
+					<img src="/static/images/icon-socials-linkedin.png" alt=""/>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+
+
+	
+	
+<div class="bloc-cta light-bg">
+	<div class="container">
+		<div class="row">
+			<h2>Start saving time now</h2>
+			<a href="/pricing.html" class="btn btn-default" role="button">Subscribe for free</a>
+		</div>
+	</div>
+</div>
+	
+	
+<div class="bloc-footer light-bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 footer-social-icons" style="padding-top:20px;">
+				<a href="https://www.facebook.com/elokenz/" target="_blank" alt=" "class="icon-footer-fb"></a>
+				<a href="https://twitter.com/elokenz_com" target="_blank" alt=" "class="icon-footer-twitter"></a>
+				<a href="http://www.linkedin.com/company/5229522" target="_blank"  alt=" "class="icon-footer-linkedin"></a>
+			</div>
+			<div class="col-lg-6 col-md-6 footer-links" style="text-align:center;">
+				<p>
+					<a href="http://www.elokenz.com/terms">Terms & Privacy</a>	-  
+					<a href="http://www.elokenz.com/about/">About</a>  -  
+					<a href="http://www.elokenz.com/contact/">Contact</a>  -  
+					<a href="http://blog.elokenz.com/" target="_blank">Blog</a></p>
+			</div>
+			<div class="col-lg-3 col-md-3 cicerolabs">
+				<p>&copy; 2016 Cicero Labs</p>
+			</div>
+		</div>
+	</div>
+</div>
+	
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- jQuery -->
     <!-- <script src="/static/js/jquery.211.js"></script> -->
     <script
-    			  src="https://code.jquery.com/jquery-2.2.1.min.js"
-    			  integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
-    			  crossorigin="anonymous"></script>
+                  src="https://code.jquery.com/jquery-2.2.1.min.js"
+                  integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+                  crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/static/js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <!-- <script src="/static/js/bootstrap.311.min.js"></script> -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-    <!-- Tooltips - Hotspots -->
-    <script src="/static/js/tooltip_js.js"></script>
-    <script src="/static/js/jquery.app.ui.js"></script>
+	<!-- Scripts -->
+	<script src="/static/deploy/parallax.js"></script>
     <script src="/static/js/jquery.unveil.js"></script>
-
+	<script  type="text/javascript">
+    	var scene = document.getElementById('scene');
+    	var parallax = new Parallax(scene);
+	</script>
     <script type="text/javascript">
-            $(document).ready(function () {
-              $('.litetooltip-hotspot-wrapper .hotspot').each(function () {
-                  $(this).LiteTooltip({ title: $(this).find('.data-container').html() });
-               });
-            });
-
-   </script>
-
-    <script type="text/javascript">
-      $(document).ready(function() {
+        $(document).ready(function() {
         $("img").unveil();
-      });
+        });
    </script>
 
-
-
-
-    <!-- Google Tag Manager -->
+   <!-- Google Tag Manager -->
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TBSJB9"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -268,7 +406,6 @@
     '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-TBSJB9');</script>
     <!-- End Google Tag Manager -->
-
 
 
 </body>
