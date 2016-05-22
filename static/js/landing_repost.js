@@ -61,3 +61,35 @@ function updateLead(){
   var body = document.getElementsByTagName('body')[0];
   body.appendChild(img);
 }
+
+
+
+
+/********************
+/ Page Pricing
+*********************/
+$('#toggle_event_editing button').click(function(){
+  if($(this).hasClass('locked_active') || $(this).hasClass('unlocked_inactive')){
+    /* code to do when unlocking */
+        $('#switch_status').html('Switched on.');
+        $('#basic_price').html('10');
+        $('#basic_price_future').html('19');
+        $('#startup_price').html('26');
+        $('#startup_price_future').html('39');
+        $('#pricing_awesomeAccount').attr("href", "https://elokenz.chargebee.com/hosted_pages/plans/basic-monthly");
+        $('#pricing_premiumAccount').attr("href", "https://elokenz.chargebee.com/hosted_pages/plans/startup-monthly");
+  }else{
+    /* code to do when locking */
+        $('#switch_status').html('Switched off.');
+        $('#basic_price').html('8.50');
+        $('#basic_price_future').html('16');
+        $('#startup_price').html('22');
+        $('#startup_price_future').html('33');
+        $('#pricing_awesomeAccount').attr("href", "https://elokenz.chargebee.com/hosted_pages/plans/basic-yearly");
+        $('#pricing_premiumAccount').attr("href", "https://elokenz.chargebee.com/hosted_pages/plans/startup-yearly");
+  }
+  
+  /* reverse locking status */
+  $('#toggle_event_editing button').eq(0).toggleClass('locked_inactive locked_active btn-secondary btn-success');
+  $('#toggle_event_editing button').eq(1).toggleClass('unlocked_inactive unlocked_active  btn-success btn-secondary');
+});

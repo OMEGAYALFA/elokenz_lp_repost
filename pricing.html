@@ -33,7 +33,6 @@
 
     <link rel="icon" type="image/png" href="/static/img/logo_elokenz_sq_32.png">
     <link rel="apple-touch-icon" href="/static/img/logo_elokenz_sq_32.png">
-    <script src="static/js/landing_repost.js" type="text/javascript"></script>
   </head>
   <body class="noborder">
 
@@ -44,6 +43,14 @@
 
       <div class="row ">
         <div class="row text-center"><img src="/static/images/logo-repost.png"  style="padding-top: 0px; padding-bottom: 50px;"></div>
+
+
+          <div class="col-xs-12 text-center">
+            <div class="btn-group" role="group" id="toggle_event_editing">
+              <button type="button" class="btn  btn-success locked_active">Yearly (15% discount)</button>
+              <button type="button" class="btn btn-secondary unlocked_inactive">Monthly</button>
+            </div>
+          </div>
           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <div class="db-wrapper">
                   <div class="db-pricing-two" onclick="mainFN('free')">
@@ -56,7 +63,7 @@
                           <li>1 User</li>
                           <li>1 Profile per Platform </li>
                           <li>Social Platforms : <i class="fa fa-twitter"></i> / <i class="fa fa-facebook"></i></li>
-                          <li>100 scheduled Reposts <br /> per Profile each Month</li>
+                          <li>100 scheduled Reposts <br /> per Month</li>
                           <li>10 Slots in your Library<br />+ 4 additional Slots per month</li>
                           <li>Performance Analytics </li>
 
@@ -71,17 +78,17 @@
           </div>
           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <div class="db-wrapper">
-                  <div class="db-pricing-two db-pricing-popular"  onclick="mainFN('awesome')">
+                  <div class="db-pricing-two db-pricing-popular">
                       <div class="pricing-header db-bk-color-three">
-                          <h1 class="price">10 <small>$/mo</small>
+                          <h1 class="price"><span id="basic_price">8.50</span> <small>$/mo</small>
                           </h1>
                       </div>
                       <ul>
-                          <li class="type">Early bird offer<br />If you register after July 1st. : $19/mo</li>
+                          <li class="type">Early bird offer<br />If you register after July 1st. : $<span id="basic_price_future">16</span>/mo</li>
                           <li>1 User</li>
                           <li>10 Profiles</li>
                           <li>Social Platforms : <i class="fa fa-twitter"></i> / <i class="fa fa-facebook"></i> / <i class="fa fa-google-plus"></i> / <i class="fa fa-linkedin"></i></li>
-                          <li>500 scheduled Reposts <br /> per Profile per Month</li>
+                          <li>500 scheduled Reposts <br /> per Month</li>
                           <li>50 Slots in your Library<br />+ 10 additional Slots per month</li>
                           <li>Performance Analytics </li>
 
@@ -91,24 +98,24 @@
                       <div class="pricing-footer db-bk-color-three">
 
                           <!-- <a href="#" class="btn btn-default ">Start Trial</a> -->
-                          <a class="btn btn-default"  id="pricing_awesomeAccount">Sign Up</a>
+                          <a class="btn btn-default"  id="pricing_awesomeAccount" href="https://elokenz.chargebee.com/hosted_pages/plans/basic-yearly">Sign Up</a>
                       </div>
                   </div>
               </div>
           </div>
           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
               <div class="db-wrapper">
-                  <div class="db-pricing-two" onclick="mainFN('premium')">
+                  <div class="db-pricing-two">
                       <div class="pricing-header db-bk-color-four">
-                        <h1 class="price">25 <small>$/mo</small>
+                        <h1 class="price"><span id="startup_price">22</span> <small>$/mo</small>
                         </h1>
                       </div>
                       <ul>
-                          <li class="type">Early bird offer<br />If you register after July 1st. : $39/mo</li>
+                          <li class="type">Early bird offer<br />If you register after July 1st. : $<span id="startup_price_future">33</span>/mo</li>
                           <li>3 Users</li>
                           <li>25 Profiles</li>
                           <li>Social Platforms : <i class="fa fa-twitter"></i> / <i class="fa fa-facebook"></i> / <i class="fa fa-google-plus"></i> / <i class="fa fa-linkedin"></i> </li>
-                          <li>1500 scheduled Reposts <br /> per Profile each Month</li>
+                          <li>1500 scheduled Reposts <br /> per Month</li>
                           <li>150 Slots in your Library<br />+ 30 additional Slots per month</li>
 
                           <li>Bulk import (CSV) </li>
@@ -118,11 +125,12 @@
                       <div class="pricing-footer db-bk-color-four">
 
                           <!-- <a href="#" class="btn btn-default ">Start Trial</a> -->
-                          <a class="btn btn-default"  id="pricing_premiumAccount">Sign Up</a>
+                          <a class="btn btn-default"  id="pricing_premiumAccount" href="https://elokenz.chargebee.com/hosted_pages/plans/startup-yearly">Sign Up</a>
                       </div>
                   </div>
               </div>
           </div>
+
 
       </div>
 
@@ -157,6 +165,7 @@
             src="https://code.jquery.com/jquery-2.2.1.min.js"
             integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
             crossorigin="anonymous"></script>
+    <script src="static/js/landing_repost.js" type="text/javascript"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <!-- <script src="/static/js/bootstrap.311.min.js"></script> -->

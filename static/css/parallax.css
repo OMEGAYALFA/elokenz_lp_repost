@@ -434,6 +434,10 @@ height:280px;
 	padding-right:20px;
 }
 
+.bloc-socials-icons div > img  {
+	max-height:40%;
+}
+
 .bloc-cta .btn {
 margin-top:20px;font-size:30px;height:90px;padding-left:75px;padding-right:75px;
 }
