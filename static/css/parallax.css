@@ -18,7 +18,7 @@ body {
 	background:url("../images/banner.png");
 	background-repeat:no-repeat;
 	background-position:top center;
-  background-size:contain;
+  	background-size:cover;
 }
 
 .bloc-tour  {
@@ -162,9 +162,9 @@ color:#333;
 
 
 @media (max-width: 767px) {
-.bloc-tour .tour {
-  display:none;
-}
+	.bloc-tour .tour {
+	  display:none;
+	}
 	.social-icon-mail {
 	height:450px !important;
 	}
@@ -208,13 +208,13 @@ color:#333;
 	line-height:40px;
 	}
 	.intro-header .intro-banner {
-	text-align:center!important;
-	height:980px;
-	padding:50px;
-	color:white;
-	background:url("../images/screenshot-repost.png") no-repeat center;
-	background-size:100%;
-	background-position:bottom;
+		text-align:center!important;
+		height:980px;
+		padding:50px;
+		color:white;
+		background:url("../images/screenshot-repost.png") no-repeat center;
+		background-size:100%;
+		background-position:bottom;
 	}
 	.intro-message{
 	width:100%;
@@ -252,20 +252,20 @@ color:#333;
 		margin:auto;
 	}
 
-.intro-header .intro-banner {
-text-align:center!important;
-height:1200px;
-padding:50px;
-color:white;
-background:url("../images/screenshot-repost.png") no-repeat center;
-background-size:80%;
-background-position:bottom;
-}
+	.intro-header .intro-banner {
+	text-align:center!important;
+	height:1200px;
+	padding:50px;
+	color:white;
+	background:url("../images/screenshot-repost.png") no-repeat center;
+	background-size:80%;
+	background-position:bottom;
+	}
 
-.intro-message{
-margin:auto;
-width:80%;
-}
+	.intro-message{
+	margin:auto;
+	width:80%;
+	}
 }
 @media (min-width: 992px) {
 	.bloc-tour .container {
@@ -277,22 +277,22 @@ width:80%;
 	width:35%;
 	}
 
-.intro-header .intro-banner {
-height:1200px;
-padding-left:150px;
-color:white;
-background:url("../images/screenshot-repost2.png") no-repeat;
-background-size:100%;
-background-position:5px 30%;
-	margin-bottom:-350px;
+	.intro-header .intro-banner {
+	height:1200px;
+	padding-left:150px;
+	color:white;
+	background:url("../images/screenshot-repost2.png") no-repeat;
+	background-size:100%;
+	background-position:5px 30%;
+		margin-bottom:-350px;
 
-}
+	}
 
-.intro-message{
-margin:0;
-text-align:left;
-width:45%;
-}
+	.intro-message{
+	margin:0;
+	text-align:left;
+	width:45%;
+	}
 }
 
 .bloc-testimonials {
@@ -503,4 +503,11 @@ text-align:right;
 .bloc-footer img {
 	padding-right:20px;
 	padding-right:20px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-toggle{
+	border-color: #fff!important;
 }
