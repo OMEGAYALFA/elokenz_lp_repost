@@ -68,14 +68,14 @@ header {
   padding-bottom: 15px;
   padding-top: 15px;
   margin: 0px;}
-  
+
 
  /*------------------------------------*\
     $Brand
 \*------------------------------------*/
   #brand{
     margin-bottom: 100px;
-}  
+}
   #brand h1 {
     color: #535353;
     font-family: "proxima-nova";
@@ -87,7 +87,7 @@ header {
   #brand h1 span {
       font-weight: 600;
       text-decoration: decoration-none; }
-      
+
   #brand   input.email {
     margin-top: 80px;
      background-color: #fff;
@@ -98,7 +98,7 @@ header {
     -o-border-radius: 15px;
     border-radius: 15px;
         }
-        
+
   #brand input.submit {
   margin-top: 10px;
     width: 60%;
@@ -110,10 +110,10 @@ header {
     -o-border-radius: 15px;
     border-radius: 15px;
     border: 0px solid #740af4;
-    
+
     padding-left: 20px;
   }
-  
+
   @media only screen and (max-width: 767px) {
   #brand   input.email {
     margin-top: 20px;}
@@ -191,7 +191,7 @@ header {
   #content .social, #content .machine,  #content .tracking  {
    margin-bottom: 60px; }
    }
- 
+
 
 /*------------------------------------*\
     $FOOTER
@@ -200,7 +200,7 @@ footer {
   border: 1px solid #dfdfdf;
   background-color: #f1f1f1;
   line-height: 145px; }
-  
+
    input.email {
     margin: 0px;
     padding: 0px;
@@ -209,7 +209,7 @@ footer {
     -ms-border-radius: 35px;
     -o-border-radius: 35px;
     border-radius: 35px;
-    
+
     background-color: #d9d9d9;
     width: 95%;
     color: #888;
@@ -223,8 +223,8 @@ footer {
     -moz-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s;
-    background: #fafafa; 
-    border: 2px solid #740af4; 
+    background: #fafafa;
+    border: 2px solid #740af4;
     /* the glow */
       border: solid 1px #5cb85c;
       transition: box-shadow 0.3s, border 0.3s;
@@ -236,7 +236,7 @@ footer {
     box-shadow: 0 0 5px 1px #969696;
     }
     input.submit {
-   
+
     margin: 0px;
     padding: 0px;
     height: 70px;
@@ -274,7 +274,7 @@ footer {
   color: #d5d5d5;
   font-family: "proxima-nova";
   font-size: 18px;
-  text-align: center; 
+  text-align: center;
   display: block;
   position: relative;
   z-index: -10}
