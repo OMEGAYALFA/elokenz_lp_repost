@@ -333,10 +333,9 @@ color:#333;
 	margin:0;
 }
 
-.bloc-contact {
-	background:url(../images/contact-bg.png) no-repeat;
-    background-size: cover;
-	min-height:600px;
+.bloc-contact, .bloc-join  {
+  background-size: cover;
+	min-height:700px;
 	margin:auto;
 	padding-top:50px;
 	padding-left:100px;
@@ -344,15 +343,11 @@ color:#333;
 	padding-right:100px;
 }
 
+.bloc-contact  {
+	background:url(../images/contact-bg.png) no-repeat;
+}
 .bloc-join {
 	background:url(../images/join-bg.png) no-repeat;
-    background-size: cover;
-	min-height:600px;
-	margin:auto;
-	padding-top:50px;
-	padding-left:100px;
-	padding-bottom:80px;
-	padding-right:100px;
 }
 
 .bloc-socials {
