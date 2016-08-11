@@ -1,176 +1,298 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Repost by Elokenz - Plans and Pricing</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
-        <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="/static/css/bootstrap.334.min.css">
+	<link rel="stylesheet" href="static/css/reset.css"> <!-- CSS reset -->
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="static/css/parallax.css"/>
+	<link rel="stylesheet" href="static/css/style_pricing.css"> <!-- Resource style -->
+	<script src="static/js/modernizr.js"></script> <!-- Modernizr -->
 
-    <!-- Custom Fonts -->
-    <link href="/static/fonts/font-icomoon/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+	<title>Pricing Repost</title>
+</head>
+<body>
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
 
-    <!-- Custom CSS -->
-    <link href="/static/css/landing-page.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-
-    <link rel="icon" type="image/png" href="/static/img/logo_elokenz_sq_32.png">
-    <link rel="apple-touch-icon" href="/static/img/logo_elokenz_sq_32.png">
-  </head>
-  <body class="noborder">
-
-
-    <div class="content-section-b pricing">
-
-      <div class="container">
-
-      <div class="row ">
-        <div class="row text-center"><a href="/"><img src="/static/images/logo-repost.png"  style="padding-top: 0px; padding-bottom: 50px;"></a></div>
-
-
-          <div class="col-xs-12 text-center">
-            <div class="btn-group" role="group" id="toggle_event_editing">
-              <button type="button" class="btn  btn-success locked_active">Yearly (15% discount)</button>
-              <button type="button" class="btn btn-secondary unlocked_inactive">Monthly</button>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="/">
+					<img style="max-height:41px; margin-top:-10px;" src="/static/images/logo-repost.png">
+				</a>
             </div>
-          </div>
-          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <div class="db-wrapper">
-                  <div class="db-pricing-two" onclick="mainFN('free')">
-                      <div class="pricing-header db-bk-color-four">
-                          <h1 class="price free">Free
-                          </h1>
-                      </div>
-                      <ul>
-                          <li class="type">Free forever</li>
-                          <li>1 User</li>
-                          <li>1 Profile per Platform </li>
-                          <li>Social Platforms : <i class="fa fa-twitter"></i> / <i class="fa fa-facebook"></i> </li>
-                          <li>100 scheduled Reposts <br /> per Month</li>
-                          <li>10 Slots in your Library<br />+ 4 additional Slots per month</li>
-                          <li>Performance Analytics </li>
-
-                      </ul>
-
-                  </div>
-              </div>
-          </div>
-          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <div class="db-wrapper">
-                  <div class="db-pricing-two db-pricing-popular" onclick="mainFN('free')">
-                      <div class="pricing-header db-bk-color-three">
-                          <h1 class="price"><span id="basic_price">8.50</span> <small>$/mo</small>
-                          </h1>
-                      </div>
-                      <ul>
-                          <li class="type">Early bird offer<br />If you register after September 1st. : $<span id="basic_price_future">16</span>/mo</li>
-                          <li>1 User</li>
-                          <li>10 Profiles</li>
-                          <li>Social Platforms : <i class="fa fa-twitter"></i> / <i class="fa fa-linkedin"></i> / <i class="fa fa-facebook"></i> <br /><i class="text-success">* Available soon : <i class="fa fa-google-plus"></i> </i> </li>
-                          <li>500 scheduled Reposts <br /> per Month</li>
-                          <li>50 Slots in your Library<br />+ 10 additional Slots per month</li>
-                          <li>Performance Analytics </li>
-
-
-
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              <div class="db-wrapper">
-                  <div class="db-pricing-two"  onclick="mainFN('free')">
-                      <div class="pricing-header db-bk-color-four">
-                        <h1 class="price"><span id="startup_price">22</span> <small>$/mo</small>
-                        </h1>
-                      </div>
-                      <ul>
-                          <li class="type">Early bird offer<br />If you register after September 1st. : $<span id="startup_price_future">33</span>/mo</li>
-                          <li><i class="text-success">* Available in 2017 :</i> 3 Users</li>
-                          <li>25 Profiles</li>
-                          <li>Social Platforms : <i class="fa fa-twitter"></i>  / <i class="fa fa-linkedin"></i> / <i class="fa fa-facebook"></i> <br /><i class="text-success">* Available soon :  <i class="fa fa-google-plus"></i></i></li>
-                          <li>1500 scheduled Reposts <br /> per Month</li>
-                          <li>150 Slots in your Library<br />+ 30 additional Slots per month</li>
-
-                          <li>Bulk import (CSV) </li>
-                          <li>Performance Analytics </li>
-
-                      </ul>
-
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-xs-12 text-center">
-            <a class="btn btn-default" role="button" onclick="mainFN('free')">Be the first to try Repost</a>
-          </div>
-
-
-      </div>
-
-  </div>
-  <!-- CONATINER END -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/#about">How it works</a></li>
+                    <li><a href="/pricing.html">Pricing</a></li>
+                    <li><a href="https://www.elokenz.com/about/">About</a></li>
+                    <li><a href="http://blog.elokenz.com/">Blog</a></li>
+                    <li><a href="https://www.elokenz.com/contact/">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
     </div>
-    <!-- /.content-section-b -->
+    <!-- /.intro-header -->
+
+	<header class="cd-header">
+		<h1>Pricing Respost</h1>
+	</header>
+
+	<div class="cd-pricing-container cd-full-width cd-secondary-theme">
+		<div class="cd-pricing-switcher">
+			<p class="fieldset">
+				<input type="radio" name="duration" value="monthly" id="monthly" checked>
+				<label for="monthly">Monthly</label>
+				<input type="radio" name="duration" value="yearly" id="yearly">
+				<label for="yearly">Yearly</label>
+				<span class="cd-switch"></span>
+			</p>
+		</div> <!-- .cd-pricing-switcher -->
+
+		<ul class="cd-pricing-list cd-bounce-invert">
+			<li>
+				<ul class="cd-pricing-wrapper">
+					<li data-type="monthly" class="is-visible">
+						<header class="cd-pricing-header">
+
+							<div class="cd-price">
+								<span class="cd-value">Free</span>
+							</div>
+						</header> <!-- .cd-pricing-header -->
+
+						<div class="cd-pricing-body">
+							<ul class="cd-pricing-features">
+								<li><em>1</em> Profile per Platform</li>
+								<li><em>Social Platforms</em> Twitter / Facebook</li>
+								<li><em>100 scheduled Reposts</em> per Month</li>
+								<li><em>10 Slots</em> in your Library</li>
+								<li>+ <em>4 additional Slots</em> per month</li>
+								<li><em>Performance Analytics</em></li>
+							</ul>
+						</div> <!-- .cd-pricing-body -->
+
+						<!-- <footer class="cd-pricing-footer">
+							<a class="cd-select" href="http://repost.elokenz.com/register.html">Select</a>
+						</footer> --> <!-- .cd-pricing-footer -->
+					</li>
+
+					<li data-type="yearly" class="is-hidden">
+						<header class="cd-pricing-header">
+							<div class="cd-price">
+								<span class="cd-value">Free</span>
+							</div>
+						</header> <!-- .cd-pricing-header -->
+
+						<div class="cd-pricing-body">
+							<ul class="cd-pricing-features">
+								<li><em>1</em> Profile per Platform</li>
+								<li><em>Social Platforms</em> Twitter / Facebook</li>
+								<li><em>100 scheduled Reposts</em> per Month</li>
+								<li><em>10 Slots</em> in your Library</li>
+								<li>+ <em>4 additional Slots</em> per month</li>
+								<li><em>Performance Analytics</em></li>
+							</ul>
+						</div> <!-- .cd-pricing-body -->
+
+						<!-- <footer class="cd-pricing-footer">
+							<a class="cd-select" href="http://repost.elokenz.com/register.html">Select</a>
+						</footer>  --><!-- .cd-pricing-footer -->
+					</li>
+				</ul> <!-- .cd-pricing-wrapper -->
+			</li>
+
+			<li class="cd-popular">
+				<ul class="cd-pricing-wrapper">
+					<li data-type="monthly" class="is-visible">
+						<header class="cd-pricing-header">
+							<h2>Basic</h2>
+
+							<div class="cd-price">
+								<span class="cd-currency">$</span>
+								<span class="cd-value">8.5</span>
+								<span class="cd-duration">mo</span>
+							</div>
+						</header> <!-- .cd-pricing-header -->
+
+						<div class="cd-pricing-body">
+							<ul class="cd-pricing-features">
+								<li><em>10</em> Profile per Platform</li>
+								<li><em>Social Platforms</em> Twitter / Facebook / Linkedin / Google+</li>
+								<li><em>500 scheduled Reposts</em> per Month</li>
+								<li><em>50 Slots</em> in your Library</li>
+								<li>+ <em>10 additional Slots</em> per month</li>
+								<li><em>Performance Analytics</em></li>
+							</ul>
+						</div> <!-- .cd-pricing-body -->
+
+						<!-- <footer class="cd-pricing-footer">
+							<a class="cd-select" href="https://elokenz.chargebee.com/hosted_pages/plans/basic-yearly">Try it for 30 days</a>
+							<br/><br/><span style="color:#FFF;">or <a href="#" style="color:#FFF;font-weight:bold;">subscribe now</a>.</span>
+						</footer>  -->
+					</li>
+
+					<li data-type="yearly" class="is-hidden">
+						<header class="cd-pricing-header">
+							<h2>Basic</h2>
+
+							<div class="cd-price">
+								<span class="cd-currency">$</span>
+								<span class="cd-value">120</span>
+								<span class="cd-duration">yr</span>
+							</div>
+						</header> <!-- .cd-pricing-header -->
+
+						<div class="cd-pricing-body">
+							<ul class="cd-pricing-features">
+								<li><em>10</em> Profile per Platform</li>
+								<li><em>Social Platforms</em> Twitter / Facebook / Linkedin / Google+</li>
+								<li><em>500 scheduled Reposts</em> per Month</li>
+								<li><em>50 Slots</em> in your Library</li>
+								<li>+ <em>10 additional Slots</em> per month</li>
+								<li><em>Performance Analytics</em></li>
+							</ul>
+						</div> <!-- .cd-pricing-body -->
+
+						<!-- <footer class="cd-pricing-footer">
+							<a class="cd-select" href="https://elokenz.chargebee.com/hosted_pages/plans/basic-yearly">Try it for 30 days</a>
+							<br/><br/><span style="color:#FFF;">or <a href="#" style="color:#FFF;font-weight:bold;">subscribe now</a>.</span>
+						</footer> --> <!-- .cd-pricing-footer -->
+					</li>
+				</ul>
+			</li> <!-- .cd-pricing-wrapper -->
+
+			<li>
+				<ul class="cd-pricing-wrapper">
+					<li data-type="monthly" class="is-visible">
+						<header class="cd-pricing-header">
+							<h2>Agency</h2>
+
+							<div class="cd-price">
+								<span class="cd-currency">$</span>
+								<span class="cd-value">26</span>
+								<span class="cd-duration">mo</span>
+							</div>
+						</header> <!-- .cd-pricing-header -->
+
+						<div class="cd-pricing-body">
+							<ul class="cd-pricing-features">
+								<li><em>25</em> Profile per Platform</li>
+								<li><em>Social Platforms</em> Twitter / Facebook / Linkedin / Google+</li>
+								<li><em>1500 scheduled Reposts</em> per Month</li>
+								<li><em>150 Slots</em> in your Library</li>
+								<li>+ <em>30 additional Slots</em> per month</li>
+								<li><em>Bulk upload (CSV)</em></li>
+								<li><em>Performance Analytics</em></li>
+							</ul>
+						</div> <!-- .cd-pricing-body -->
+
+						<!-- <footer class="cd-pricing-footer">
+							<a class="cd-select" href="https://elokenz.chargebee.com/hosted_pages/plans/startup-yearly">Try it for 30 days</a>
+							<br/><br/><span style="color:#FFF;">or <a href="#" style="color:#FFF;font-weight:bold;">subscribe now</a>.</span>
+						</footer> --> <!-- .cd-pricing-footer -->
+					</li>
+
+					<li data-type="yearly" class="is-hidden">
+						<header class="cd-pricing-header">
+							<h2>Agency</h2>
+
+							<div class="cd-price">
+								<span class="cd-currency">$</span>
+								<span class="cd-value">264</span>
+								<span class="cd-duration">yr</span>
+							</div>
+						</header> <!-- .cd-pricing-header -->
+
+						<div class="cd-pricing-body">
+							<ul class="cd-pricing-features">
+								<li><em>25</em> Profile per Platform</li>
+								<li><em>Social Platforms</em> Twitter / Facebook / Linkedin / Google+</li>
+								<li><em>1500 scheduled Reposts</em> per Month</li>
+								<li><em>150 Slots</em> in your Library</li>
+								<li>+ <em>30 additional Slots</em> per month</li>
+								<li><em>Bulk upload (CSV)</em></li>
+								<li><em>Performance Analytics</em></li>
+							</ul>
+						</div> <!-- .cd-pricing-body -->
+
+						<!-- <footer class="cd-pricing-footer">
+							<a class="cd-select" href="https://elokenz.chargebee.com/hosted_pages/plans/startup-yearly">Try it for 30 days</a>
+							<br/><br/><span style="color:#FFF;">or <a href="#" style="color:#FFF;font-weight:bold;">subscribe now</a>.</span>
+						</footer> --> <!-- .cd-pricing-footer -->
+					</li>
+				</ul> <!-- .cd-pricing-wrapper -->
+			</li>
+		</ul> <!-- .cd-pricing-list -->
+	</div> <!-- .cd-pricing-container -->
+
+<div class="bloc-cta light-bg" style="margin-top: 0px; padding-top: 20px; padding-bottom: 80px;">
+	<div class="container">
+		<div class="row">
+			<h2 style=" margin-bottom: 10px;">Start saving time now</h2>
+            <center ><img src="static/img/3_arrows.png" style=" margin-bottom: 30px;"></center>
+            <form role="form" method="post" action="http://www.elokenz.com/" class="cta_form">
+                            <input id="mauticform_input_interestedinrepost_email" name="email" class="mauticform-input" type="text" placeholder="Email address" style="width:360px;margin-right:30px;margin-bottom: 20px; border: 1px solid #ccc;"/>
+                            <br />
+                            <button type="submit" class="btn btn-default" role="button" >Be the first to try Repost</button>
+                        </form>
+		</div>
+	</div>
+</div>
 
 
 
+<div class="bloc-footer light-bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 footer-social-icons" style="padding-top:20px;">
+				<a href="#" alt=" "class="icon-footer-fb"></a>
+				<a href="#" alt=" "class="icon-footer-twitter"></a>
+				<a href="#" alt=" "class="icon-footer-linkedin"></a>
+			</div>
+			<div class="col-lg-6 col-md-6 footer-links" style="text-align:center;">
+				<p>
+					<a href="http://www.elokenz.com/terms">Terms </a>	-
+					<a href="http://www.elokenz.com/privacy">Privacy</a>	-
+					<a href="http://www.elokenz.com/about/">About</a>  -
+					<a href="http://www.elokenz.com/contact/">Contact</a>  -
+					<a href="http://blog.elokenz.com/">Blog</a></p>
+			</div>
+			<div class="col-lg-3 col-md-3 cicerolabs">
+				<p>&copy; 2016 Cicero Labs</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="static/js/bootstrap.min.js"></script>
 
 
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-          <p><img style="max-height:41px;" src="/static/img/logo_elokenz.png"></p><br/><br/>
-
-                    <p class="copyright text-muted small">Copyright &copy; Cicero Labs 2016. All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- jQuery -->
-    <!-- <script src="/static/js/jquery.211.js"></script> -->
-    <script
-            src="https://code.jquery.com/jquery-2.2.1.min.js"
-            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
-            crossorigin="anonymous"></script>
-    <script src="static/js/landing_repost.js" type="text/javascript"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <!-- <script src="/static/js/bootstrap.311.min.js"></script> -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
-    <!-- Google Tag Manager -->
-    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TBSJB9"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TBSJB9');</script>
-    <!-- End Google Tag Manager -->
+<script src="static/js/jquery.211.js"></script>
+<script src="static/js/main.js"></script> <!-- Resource jQuery -->
+	</script>
 
 
 </body>
