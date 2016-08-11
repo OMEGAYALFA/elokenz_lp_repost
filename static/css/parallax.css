@@ -165,6 +165,19 @@ color:#333;
 }
 
 
+.pre_cta_middle{
+	margin-bottom: 40px;
+	position: relative;
+}
+.pre_cta_middle_image{
+	position: absolute;
+	right: 5px;
+	height: 70px;
+	width: 40px;
+	display: block;
+	background-image: url("/static/img/c_arrow_white.png");
+	background-repeat: no-repeat ;
+}
 @media (max-width: 767px) {
 
 
