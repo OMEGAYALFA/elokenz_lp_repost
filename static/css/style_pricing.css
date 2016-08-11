@@ -40,6 +40,7 @@ Main Components
   line-height: 170px;
   position: relative;
   text-align: center;
+  margin: 30px 0px;
 }
 .cd-header h1 {
   color: #333;
@@ -47,7 +48,7 @@ Main Components
 }
 @media only screen and (min-width: 768px) {
   .cd-header {
-    height: 160px;
+    height: 100px;
     line-height: 280px;
   }
   .cd-header h1 {
