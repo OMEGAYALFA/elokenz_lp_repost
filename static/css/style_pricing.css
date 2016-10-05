@@ -35,17 +35,70 @@ a {
 Main Components
 
 -------------------------------- */
-.cd-header {
-  height: 100px;
-  line-height: 170px;
-  position: relative;
-  text-align: center;
-  margin: 30px 0px;
+
+h1 {
+    text-align: center;
+    text-transform:uppercase;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: #333;
 }
-.cd-header h1 {
-  color: #333;
-  font-size: 2.2rem;
+
+h2 {
+text-transform: uppercase;
+font-weight:normal;
+font-size:60px;
+padding-bottom: 20px;
 }
+
+.bloc-cta {
+    padding-top: 150px!important;
+    padding-bottom: 150px!important;
+}
+
+/* INPUTS */
+
+input:focus {
+    outline: 0;
+}
+
+input[type="text"] {
+    border-radius: 25px;
+    height: auto;
+    min-width: 300px;
+    font-size: 15px;
+    padding: 15px 25px;
+}
+
+/* BUTTONS */
+
+button[type="submit"] {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 15px 30px!important;
+    height: auto;
+    display: inline-block;
+    border: 2px solid white!important;
+    border-radius: 30px;
+    background-color: transparent;
+
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+button[type="submit"]:hover {
+	background-color: #43e1df;
+    border: 2px solid #43e1df!important;
+}
+
+
 @media only screen and (min-width: 768px) {
   .cd-header {
     height: 100px;
@@ -783,4 +836,46 @@ xkeyframes
     -o-transform: perspective(2000px) rotateY(0);
     transform: perspective(2000px) rotateY(0);
   }
+}
+
+
+
+
+.bloc-footer {
+    border-top: 1px solid #f1f1f1;
+    vertical-align: middle;
+    font-size:20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 50px;
+	padding-bottom:40px;
+}
+
+.bloc-footer .social-icons {
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.bloc-footer a {
+    color: #463e92!important;
+
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.bloc-footer a:hover {
+	color: #43e1df!important;
+}
+
+.bloc-footer .social-icons a:hover {
+	color: #43e1df!important;
+}
+
+.bloc-footer .copyright {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: right;
 }

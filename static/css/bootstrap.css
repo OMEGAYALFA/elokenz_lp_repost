@@ -131,7 +131,7 @@ input[type="submit"] {
   -webkit-appearance: button;
   padding-left:50px;
   padding-right:50px;
-  background-color:#54dcb4;
+  background-color:none!important;
   cursor: pointer;
 }
 button[disabled],
@@ -3072,7 +3072,7 @@ fieldset[disabled] a.btn {
 .btn-default {
   color: #fff;
   font-size:20px;
-  background-color: #54dcb4;
+  background-color: none;
   padding-left:50px;
   padding-right:50px;
   border-radius:100px;
