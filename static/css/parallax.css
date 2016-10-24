@@ -179,7 +179,7 @@ a.request-access:hover {
     max-width: 600px;
 }
 
-.bloc-testimonials {
+.bloc-testimonials, .bloc-cta-gradient {
 	text-align:center;
 	margin:auto;
 	padding-top: 50px;
@@ -452,6 +452,17 @@ button[type="submit"]:hover {
 	background-color: #43e1df;
     border: 2px solid #43e1df!important;
 }
+
+.bloc-cta.bloc-cta-gradient button[type="submit"] {
+    color: #ffffff;
+    border: 2px solid #eee!important;
+    }
+
+.bloc-cta.bloc-cta-gradient button[type="submit"]:hover {
+    color: #43e1df;
+    background-color: #ffffff;
+    border: 2px solid #43e1df!important;
+    }
 
 a.button {
     color: white;
