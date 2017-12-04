@@ -9,5 +9,5 @@ aws s3 sync . s3://repost.elokenz.com --region us-east-1 --acl "public-read" --e
 aws s3 sync . s3://repost.elokenz.com --region us-east-1 --acl "public-read" --exclude "*.js" --exclude "*.css" --exclude ".git/*" --exclude ".DS_Store"
 
 
-
+# Pour la nouvelle landing page v3 en attente
 aws s3 sync . s3://repost.elokenz.com/v3/ --region us-east-1 --acl "public-read"  --exclude ".git/*" --exclude ".DS_Store" --cache-control public,max-age=30672000 --dryrun
