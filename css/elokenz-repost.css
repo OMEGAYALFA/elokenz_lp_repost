@@ -552,3 +552,7 @@ footer {
 /* SM */
 @media all and (max-width: 575px) {  }
 /* XS */
+
+del{
+    color: #bbb;
+}
