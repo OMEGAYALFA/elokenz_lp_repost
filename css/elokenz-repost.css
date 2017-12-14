@@ -159,25 +159,25 @@ header.masthead {
 	  max-width: 258px; }
   @media (min-width: 1200px) {
 	header.masthead {
-		min-height: 80vh;
+		min-height: 650px;
 		padding-top: 190px;
 		background: url("../img/bg-header.png") no-repeat;
 		background-size: 50%;
 		background-repeat: no-repeat;
-		background-position: right; }
+		background-position: right bottom; }
 	}
   @media (max-width: 1199px) {
 	header.masthead {
-		min-height: 80vh;
+		min-height: 600px;
 		padding-top: 190px;
 		background: url("../img/bg-header.png") no-repeat;
 		background-size: 60%;
 		background-repeat: no-repeat;
-		background-position: right; }
+		background-position: right 60%; }
 	}
   @media (max-width: 991px) {
     header.masthead {
-	  min-height: 80vh;
+	  min-height: 700px;
 	  padding-top: 190px;
       padding-bottom: 0px;
 	  background: url("../img/bg-headerMD.png");
@@ -195,8 +195,10 @@ header.masthead {
   }
   @media (max-width: 767px) {
     header.masthead {
-	  min-height: 70vh;
+	  min-height: 700px;
 	  padding-top: 150px;
+	  padding-left: 20px;
+	  padding-right: 20px;
       padding-bottom: 0px;
 	  background: url("../img/bg-headerMD.png");
 	  background-size: 95%;
@@ -211,6 +213,9 @@ header.masthead {
 		  line-height: 55px; }
 		header.masthead p.header-underline { margin: auto; }
   }
+    @media (max-width: 575px) {
+        header.masthead .header-content h1 { font-size: 30px; line-height: 45px; }
+        header.masthead { min-height: 600px; padding-top: 150px;} }
 
 section.presentation {
 	position: relative; }
